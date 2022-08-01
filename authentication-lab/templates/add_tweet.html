@@ -6,11 +6,27 @@
 </head>
 <body>
     Great Job!
-    <form method="post" action="/add_tweet">
-        <input type ="text" name = "tweet">
-        <input type ="text" name = "title">
-        <input type="submit"/></form>
-    {{tweet}}
-    <a href = "/"><button>Sign Out</button></a>
+
+        </form>
+         <form method="post" action="/add_tweet">
+                    <label>title*</label>
+            <div>
+                <input type="title"  name="title" id="titlestr" required >
+            </div>
+        </div>
+                    <label>texts*</label>
+            <div>
+                <input type="texto"  name="text" id="textstr" required maxlength = "280">
+            </div>
+        </div>
+               <div>
+            <input type="submit"/>
+        </div>
+            </form>
+    <br>
+    
+    <a href="/sign_out"><button>signup</button></a>
+     <a href="/all_tweets"><button>all tweets</button></a>
+</body>
 </body>
 </html>
