@@ -50,7 +50,7 @@ def signup():
             # print(user)
         return redirect(url_for('add_tweet'))
         # except:
-            
+                
         #     return render_template("signup.html", error = "Authentication failed")
     else:
         return render_template('signup.html')
